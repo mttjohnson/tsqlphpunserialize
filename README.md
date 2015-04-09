@@ -1,6 +1,8 @@
 # tsqlphpunserialize
 Unserialize PHP serialized data in T-SQL
 
+Originally posted on Stack Exchange: http://stackoverflow.com/questions/11955723/unserialize-php-serialized-data-in-t-sql/11958773?noredirect=1#comment47150022_11958773
+
 I am trying to extract a gift card code from a Magento order. Some other code uses the Magento API to retrieve the order info as XML from Magento and insert the XML into a MS SQL Server record. Using T-SQL I can use XML functions to parse the XML that was retrieved from the Magento API and get almost everything I need, but the only place the actual gift card code is stored is in the gift_cards field which happens to be a php serialized string.
 
 Examples:
